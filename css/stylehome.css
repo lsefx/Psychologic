@@ -1,0 +1,157 @@
+/* Reset defaults */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.imbue-fontnew 
+{
+  font-family : "Imbue", serif;
+  font-optical-sizing : auto;
+  font-weight : 100;
+  font-style : normal;
+}
+
+
+/* Body settings */
+body 
+{
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Flex wrapper */
+.wrapper 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Header style */
+header 
+{
+    background-color:#ffed21 ;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #91d5e6;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    font-family: "Imbue";
+
+}
+
+
+.headerb
+{
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    padding: 15px;
+    font-family: "Imbue";
+    font-weight: bold;
+
+}
+
+.headera
+{
+    text-align: right;
+    color: black;
+    font-size: 25px;
+    padding: 15px;
+    font-family: "Imbue";
+    font-weight: bold;
+
+}
+
+/* Navigation links */
+nav a 
+{
+    background-color: #e691ae; 
+    border-radius: 10px;                     
+    color: white;
+    text-decoration: none;
+    margin: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a:hover 
+{
+    text-decoration: underline;
+}
+
+/* Main content */
+main 
+{
+    flex: 1;
+    width: 100%;        /* main takes 100% of the parent width */
+    margin: 20px auto; /* centers main horizontally */
+    background: white;
+    /* padding: 20px; */
+    min-height: 300px;
+}
+
+.main-left 
+{
+    width: 100%; 
+    text-align: left;
+    background: white;
+    font-size: 25px;
+    margin-bottom:30px;
+}
+
+.main-right 
+{
+    width: 100%; 
+    text-align: right;
+    background: white;
+    font-size: 25px;
+    margin-bottom:30px;
+}
+.index-img { max-width: 100%; height: auto;  }
+/* Footer style */
+footer 
+{
+    background: #ffed21;
+    border-style: solid;
+    border-color: #91d5e6;
+    border-width: 3.5px;        
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive: stack links vertically on small screens */
+@media (max-width: 600px) {
+    nav a {
+        display: block;       /* each link on its own line */
+        margin: 10px 0;       /* space between links */
+    }
+
+   main 
+      { text-align: center;
+       flex-direction: column;
+      }
+
+      .main-right
+      { text-align: center;
+       flex-direction: column;
+      }
+
+         .main-left
+      { text-align: center;
+       flex-direction: column;
+      }
+}
